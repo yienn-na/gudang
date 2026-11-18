@@ -12,4 +12,9 @@ class CSZ extends Controller
        $data['page'] = 'dashboard';
         return view('template',$data);
     }
+    public function barang($value='')
+    {
+        $data['page'] = 'barang';
+        return view('template',$data);
+    }
 }

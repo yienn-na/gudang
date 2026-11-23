@@ -18,6 +18,17 @@ class CSZ extends Controller
         $luoyunxi = new M_FeliSC(); // <-- Match exact capitalization
         $data['luoyunxi'] = $luoyunxi->tampil('barang');
         $data['page'] = 'barang';
+        return view('template', $data);
+    }
+
+    public function add($value='')
+    {
+        $data['page'] = 'tambah';
         return view('template',$data);
+    }
+   
+     public function Actadd($value='')
+    {
+        //
     }
 }

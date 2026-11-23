@@ -17,6 +17,9 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Datatables</h5>
+              @if (session('success'))
+                <div class="alert alert-success">{{ session('success') }}</div>
+              @endif
               <p>Add lightweight datatables to your project with using the <a href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple DataTables</a> library. Just add <code>.datatable</code> class name to any table you wish to conver to a datatable</p>
               <a href="/tambahbarang" class="btn btn-success">Tambah<i class="bi bi-plus-circle-fill"></i></a>
               <table class="table datatable">

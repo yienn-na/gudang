@@ -27,16 +27,10 @@ class CSZ extends Controller
         return view('template',$data);
     }
    
-    public function Actadd(Request $request)
+    public function aksitambah( request $request)
     {
-        $validated = $request->validate([
-            'namabarang' => 'required|string|max:255',
-            'kodebarang' => 'required|integer',
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('barang')->insert($validated + ['stok' => 0]);
-
-        return redirect()->route('barang.index')->with('success', 'Barang berhasil ditambahkan.');
+        $luoyunxi = new M_FeliSC();
+       echo $request->input('kodebarang');
+       
     }
-
 }

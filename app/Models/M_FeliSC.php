@@ -11,4 +11,10 @@ class M_FeliSC extends Model
         return \DB::table($tabel)
                         ->get();
     }
+
+      public function tambah($tabel, $data)
+    {
+        return \DB::table($tabel)
+        ->insert($data);
+    }
 }

@@ -29,13 +29,7 @@ class CSZ extends Controller
    
     public function Actadd(Request $request)
     {
-        $validated = $request->validate([
-            'namabarang' => 'required|string|max:255',
-            'kodebarang' => 'required|integer',
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('barang')->insert($validated + ['stok' => 0]);
-
-        return redirect()->route('barang.index')->with('success', 'Barang berhasil ditambahkan.');
+    
     }
+
 }

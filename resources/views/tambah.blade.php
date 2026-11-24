@@ -17,14 +17,14 @@
             <div class="card-body">
               <h5 class="card-title">General Form Elements</h5>
               <!-- General Form Elements -->
-               <form method="POST" action="{{ route('barang.store') }}">
+               <form method="POST" action="/aksiTambah">
                 @csrf
 
                
                 <div class="row mb-3">
                   <label for="inputText" class="col-sm-2 col-form-label">namabarang</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control @error('namabarang') is-invalid @enderror" name="namabarang" value="{{ old('namabarang') }}" required>
+                    <input type="text" class="form-control @error('namabarang') is-invalid @enderror" id="inputText" name="namabarang" value="{{ old('namabarang') }}" required>
                     @error('namabarang')
                       <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
@@ -34,7 +34,7 @@
                 <div class="row mb-3">
                   <label for="inputNumber" class="col-sm-2 col-form-label">kodebarang</label>
                   <div class="col-sm-10">
-                    <input type="number" class="form-control @error('kodebarang') is-invalid @enderror" name="kodebarang" value="{{ old('kodebarang') }}" required>
+                    <input type="number" class="form-control @error('kodebarang') is-invalid @enderror" id="inputNumber" name="kodebarang" value="{{ old('kodebarang') }}" required>
                     @error('kodebarang')
                       <div class="invalid-feedback">{{ $message }}</div>
                     @enderror

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\M_FeliSC; // <-- Removed "Http\" here
+use App\Models\M_FeliSC; 
 
 class CSZ extends Controller
 {
@@ -15,7 +15,7 @@ class CSZ extends Controller
 
     public function barang($value='')
     {
-        $luoyunxi = new M_FeliSC(); // <-- Match exact capitalization
+        $luoyunxi = new M_FeliSC(); 
         $data['luoyunxi'] = $luoyunxi->tampil('barang');
         $data['page'] = 'barang';
         return view('template',$data);

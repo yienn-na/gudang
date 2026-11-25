@@ -1,9 +1,9 @@
- <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">  
-        <img src="{{asset('assets/img/logo.png')}}" alt="">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="{{asset('asset/img/logo.png')}} " alt="">
         <span class="d-none d-lg-block">NiceAdmin</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -118,7 +118,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="{{asset('assets/img/messages-1.jpg')}}" alt="" class="rounded-circle">
+                <img src="{{asset('asset/img/messages-1.jpg')}}" alt="" class="rounded-circle">
                 <div>
                   <h4>Maria Hudson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -132,7 +132,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="{{asset('assets/img/messages-2.jpg')}}" alt="" class="rounded-circle">
+                <img src="{{asset('asset/img/messages-2.jpg')}}" alt="" class="rounded-circle">
                 <div>
                   <h4>Anna Nelson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -146,7 +146,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="{{asset('assets/img/messages-3.jpg')}}" alt="" class="rounded-circle">
+                <img src="{{asset('asset/img/messages-3.jpg')}}" alt="" class="rounded-circle">
                 <div>
                   <h4>David Muldon</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -169,7 +169,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="{{asset('assets/img/profile-img.jpg')}}" alt="Profile" class="rounded-circle">
+            <img src="{{asset('asset/img/profile-img.jpg')}}" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -242,9 +242,8 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="/barang">
           <i class="bi bi-menu-button-wide"></i><span>barang</span>
-          
         </a>
-        </li> <!-- End barang Nav -->
+      </li><!-- End barang Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
@@ -391,6 +390,6 @@
 
     </ul>
 
-  </aside><!-- End Sidebar<-->
+  </aside><!-- End Sidebar-->
 
- <main id="main" class="main">
+  <main id="main" class="main">

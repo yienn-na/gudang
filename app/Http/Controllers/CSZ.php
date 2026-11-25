@@ -18,6 +18,19 @@ class CSZ extends Controller
         $luoyunxi = new M_FeliSC(); 
         $data['luoyunxi'] = $luoyunxi->tampil('barang');
         $data['page'] = 'barang';
+        return view('template', $data);
+    }
+
+    public function add($value='')
+    {
+        $data['page'] = 'tambah';
         return view('template',$data);
+    }
+   
+    public function aksitambah( request $request)
+    {
+        $luoyunxi = new M_FeliSC();
+       echo $request->input('kodebarang');
+       
     }
 }
